@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Inside Pro </title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="https://inside.demopg.com/required/dashboard/images/favicon.svg" />
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="me-3">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+        <div>
+          <a class="navbar-brand brand-logo" href="index.html">
+            <img src="https://inside.demopg.com/required/dashboard/images/logo.svg" alt="logo" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="index.html">
+            <img src="https://inside.demopg.com/required/dashboard/images/favicon.svg" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-top"> 
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+            <h1 class="welcome-text">Tableau de bord</h1>
+            <h3 class="welcome-sub-text">Hello, Ivan Cesar. Bienvenue sur votre Back office </h3>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <form class="search-form" action="#">
+              <i class="icon-search"></i>
+              <input type="search" class="form-control" placeholder="Search Here" title="Search here">
+            </form>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+              <i class="icon-mail icon-lg"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+              <a class="dropdown-item py-3 border-bottom">
+                <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-alert m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1">Application Error</h6>
+                  <p class="fw-light small-text mb-0"> Just now </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-settings m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1">Settings</h6>
+                  <p class="fw-light small-text mb-0"> Private message </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1">New user registration</h6>
+                  <p class="fw-light small-text mb-0"> 2 days ago </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown"> 
+            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="icon-bell"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
+              <a class="dropdown-item py-3">
+                <p class="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
+                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">David Grey </p>
+                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Travis Jenkins </p>
+                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle" src="images/faces/face8.jpg" alt="Profile image">
+                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+              </div>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border me-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border me-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-bs-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-bs-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Team review meeting at 3.00 PM
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Prepare for presentation
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Resolve all the low priority tickets due today
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Schedule meeting for next week
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Project review
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 fw-light mb-0">Events</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary me-2"></i>
+                <span>Feb 11 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Creating component page build a js</p>
+              <p class="text-gray mb-0">The total number of sessions</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary me-2"></i>
+                <span>Feb 7 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+              <p class="text-gray mb-0 ">Call Sarah Graves</p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 fw-normal">See All</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Thomas Douglas</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Catherine</p>
+                  </div>
+                  <p>Away</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Daniel Russell</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>James Richardson</p>
+                  <p>Away</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Madeline Kennedy</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Sarah Graves</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="mdi mdi-home-variant  menu-icon"></i>
+              <span class="menu-title">Tableau de bord</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="menu-icon mdi mdi-file-outline "></i>
+              <span class="menu-title">Autorisaton d'absence</span>
+              <i class="menu-arrow"></i> 
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="demandes.html">Les demandes</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Gérer mes demandes</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <i class="menu-icon mdi mdi-calendar-blank "></i>
+              <span class="menu-title">Demande de congé</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              <i class="menu-icon mdi mdi mdi-pencil-box-outline "></i>
+              <span class="menu-title">Justification d'absence</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">Collaborateurs</a></li>
+                <!--<li class="nav-item"> <a class="nav-link" href="#">Mes Justifications/a></li>-->
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <i class="menu-icon  mdi mdi-wallet "></i>
+              <span class="menu-title">Demande d'achat</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <i class="menu-icon mdi mdi-square-inc-cash "></i>
+              <span class="menu-title">Note de frais</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="menu-icon mdi mdi-account-multiple-outline "></i>
+              <span class="menu-title">Utilisateurs</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.html">
+              <i class="menu-icon  mdi mdi-folder-outline "></i>
+              <span class="menu-title">Management</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="home-tab">
+                <div class="tab-content tab-content-basic">
+                  <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview"> 
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="stat statistics-details d-flex align-items-center justify-content-between">
+                          <div class="d-none d-md-block">
+                            <div class="row">
+                              <div class="visitor">
+                                <div class="icon-4">
+                                    <img class="icon-awesome-calendar-check" src="https://inside.demopg.com/required/auth/img/icon-awesome-calendar-check-10@1x.png">
+                                  </div>
+                                <div class="flex-col">
+                                  <div class="group-20"><div class="visitor-1 poppins-medium-delta-14px">Accepter</div></div>
+                                  <h1 class="title poppins-semi-bold-gun-powder-49px">120</h1>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-none d-md-block">
+                            <div class="row">
+                              <div class="new-user">
+                                <div class="overlap-group1-1">
+                                  <div class="stat"></div>
+                                  <div class="group-22"><div class="new-user-1 poppins-medium-delta-14px">Rejeter</div></div>
+                                  <div class="rejet-ico"></div>
+                                  <div class="number poppins-semi-bold-gun-powder-49px" style="margin-left: 20px;">0</div>
+                                  <img class="icon-close" src="https://inside.demopg.com/required/auth/img/icon-material-cancel-12@1x.png">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-none d-md-block">
+                            <div class="row">
+                              <div class="att-stat">
+                                <div class="overlap-group2-2">
+                                  <div class="rectangle_29"></div>
+                                  <div class="x019-message"></div>
+                                </div>
+                                <div class="group-26">
+                                  <div class="group-24"><div class="email-unread poppins-medium-delta-14px">En attente</div></div>
+                                  <div class="text-1 poppins-semi-bold-gun-powder-49px">0</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="row">
+                      <div class="col-lg-12 d-flex flex-column">
+                        <div class="row flex-grow">
+                          <div class="col-12 grid-margin stretch-card">
+                            <div class="card card-rounded">
+                              <div class="card-body">
+                                <div class="d-sm-flex justify-content-between align-items-start">
+                                  <div>
+                                    <h4 class="total-candidates cerapro-medium-cioccolato-20px">Mes Justifications</h4>
+                                  </div>
+                                  <div class="frame-376">
+                                    <span class="number-3 cerapro-medium-mine-shaft-16px">10</span>
+                                    </div>
+                                  <div>
+                                    <button class="btn btn-primary btn-lg text-white mb-0 me-0" type="button"><i class="mdi mdi-account-plus"></i>Add new member</button>
+                                  </div>
+                                </div>
+                                <div class="table-responsive  mt-1">
+                                  <table class="table select-table">
+                                    <thead>
+                                      <tr>
+                                        <th>
+                                          <div class="form-check form-check-flat mt-0">
+                                            <label class="form-check-label">
+                                              <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                          </div>
+                                        </th>
+                                        <th>Motif de justification</th>
+                                        <th>Description</th>
+                                        <th>Date/heure</th>
+                                        <th>Piece Jointe</th>
+                                        <th>Statut</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <div class="form-check form-check-flat mt-0">
+                                            <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="d-flex ">
+                                            <img src="images/faces/face1.jpg" alt="">
+                                            <div>
+                                              <h6>Brandon Washington</h6>
+                                              <p>Head admin</p>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                            <h6>Company name 1</h6>
+                                            <p>company type</p>
+                                          </td>
+                                        <td>
+                                          <h6>Company name 1</h6>
+                                          <p>company type</p>
+                                        </td>
+                                        <td>
+                                            <img src="https://inside.demopg.com/required/auth/img/icon-metro-file-pdf-12@1x.png" alt="">
+                                        </td>
+                                        <td><div class="badge badge-opacity-warning">In progress</div></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row flex-grow">
+                          <div class="col-12 grid-margin stretch-card">
+                            <div class="card card-rounded">
+                              <div class="card-body">
+                                <div class="d-sm-flex justify-content-between align-items-start">
+                                  <div>
+                                    <h4 class="total-candidates cerapro-medium-cioccolato-20px">
+                                        Formulaire de Justification
+                                      </h4>
+                                  </div>
+                                </div>
+                                <div class="table-responsive  mt-1">
+                                  <form action="" method="post">
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <div class="form-group">
+                                              <label class="poppins-normal-black-16px">Motif de justification</label>
+                                              <select class="form-control js-example-basic-single w-100 select2-hidden-accessible poppins-normal-black-16px" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                                                <option selected>Sélectionnez un motif</option>
+                                                <option value="WY">Wyoming</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <div class="form-group">
+                                              <label class="poppins-normal-black-16px">Date de depart</label>
+                                              <input class="poppins-normal-black-16px form-control date" type="date" name="">
+                                            </div>
+                                          
+                                          </div>
+                                          <div class="col-md-6">
+                                            <div class="form-group">
+                                              <label class="poppins-normal-black-16px">Date de retour</label>
+                                              <input class="poppins-normal-black-16px form-control date" type="date" name="">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <div class="form-group">
+                                              <label class="poppins-normal-black-16px">Ajouter un Fichier</label>
+                                              <div class="overlap-group8">
+                                                <div class="bg"><img class="bg-1" src="https://inside.demopg.com/required/auth/img/bg-13@1x.png"></div>
+                                                <p class="choisir-les-fichiers-tlcharger manrope-bold-black-14px">Choisir les fichiers à télécharger</p>
+                                                <div class="ou manrope-normal-shadow-blue-14px">ou</div>
+                                                <button type="submit" class="button-browse-file border-1px-cararra">
+                                                  <img class="icon-upload" src="https://inside.demopg.com/required/auth/img/icon-upload-1@1x.png">
+                                                  <div class="parcourir-les-fichiers manrope-bold-shadow-blue-14px">Parcourir les fichiers</div>
+                                                </button>
+                                                <img class="rectangle-54" src="https://inside.demopg.com/required/auth/img/rectangle-54-1@1x.png">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <div class="form-group">
+                                          <label class="poppins-normal-black-16px">Informations complementaire</label>
+                                          <textarea class="poppins-normal-black-16px" id='tinyMceExample'></textarea>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                         <div class="form-group">
+                                          <label class="poppins-normal-black-16px">Departement</label>
+                                            <input class="poppins-normal-black-16px form-control" type="text" name="" disabled>
+                                         </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group">
+                                          <label class="poppins-normal-black-16px">Responsable Departement</label>
+                                          <input class="poppins-normal-black-16px form-control" type="text" name="" disabled>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-9">
+                                        <div class="form-group">
+                                          <div class="form-check form-check-warning">
+                                            <label class="poppins-normal-black-16px form-check-label">
+                                              <input type="checkbox" class="form-check-input" checked="">
+                                              M'envoyer une copie par e-mail
+                                            <i class="input-helper"></i></label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <div class="form-group">
+                                          <div class="input-group-append">
+                                            <button class="btn btn-sm button-next manrope-bold-white-16px" type="submit">Soumettre</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="vendors/progressbar.js/progressbar.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/jquery.cookie.js" type="text/javascript"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/Chart.roundedBarCharts.js"></script>
+  <script src="js/tinymce.min.js"></script>
+  
+  <script>
+    tinymce.init({
+    selector: '#tinyMceExampl',
+    plugins: [
+        'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+        'searchreplace wordcount visualblocks visualchars code fullscreen',
+        'insertdatetime media nonbreaking save table contextmenu directionality',
+        'emoticons template paste textcolor colorpicker textpattern imagetools codesample toc help'
+    ],
+    toolbar1: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+    toolbar2: 'print preview media | forecolor backcolor emoticons | codesample help',
+    image_advtab: true,
+    templates: [{
+            title: 'Test template 1',
+            content: 'Test 1'
+        },
+        {
+            title: 'Test template 2',
+            content: 'Test 2'
+        }
+    ],
+    content_css: [
+        '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+        '//www.tinymce.com/css/codepen.min.css'
+    ]
+    });
+    </script>
+    <script>
+
+      tinymce.init({
+
+        selector: '#tinyMceExample',
+        plugins: [
+
+          'a11ychecker','advlist','advcode','advtable','autolink','checklist','export',
+
+          'lists','link','image','charmap','preview','anchor','searchreplace','visualblocks',
+
+          'powerpaste','fullscreen','formatpainter','insertdatetime','media','table','help','wordcount'
+
+        ],
+        content_css: [
+        '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+        '//www.tinymce.com/css/codepen.min.css'
+    ],
+        toolbar: 'undo redo | formatpainter casechange blocks | bold italic backcolor | ' +
+
+          'alignleft aligncenter alignright alignjustify | ' +
+
+          'bullist numlist checklist outdent indent | removeformat | a11ycheck code table help'
+        
+      });
+
+    </script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
